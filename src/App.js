@@ -1,23 +1,8 @@
 // @flow
 import * as React from 'react';
-import styled from 'styled-components';
-// ASSETS
-import Logo from './logo.svg';
+import Trainess from 'container';
+
 // EXPORTED COMPONENT
-const App = () => (
-  <Content>
-    <Header className="App-title">Welcome to React</Header>
-    <Logo />
-  </Content>
-);
+const App = () => <Trainess />;
 
 export default App;
-
-const Header = styled.h1`
-  font-size: 36px;
-  justify-self: center;
-`;
-
-const Content = styled.div`
-  display: grid;
-`;

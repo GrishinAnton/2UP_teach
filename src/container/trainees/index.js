@@ -1,20 +1,12 @@
 import React from 'react';
-import headerLogo from 'assets/img/logotype.svg';
+import styled from 'styled-components';
+import Header from 'components/header';
 
 export default function Trainess() {
   return (
-    <div className="wrapper">
+    <Wrapper>
       <div className="container">
-        <header className="header">
-          <div className="header__logo">
-            <a href="/" title="2UP">
-              <img src={headerLogo} alt="2up" />
-            </a>
-          </div>
-          <div className="header__title">
-            <p>Стажировка</p>
-          </div>
-        </header>
+        <Header />
       </div>
       <hr />
       <div className="container">
@@ -265,6 +257,8 @@ export default function Trainess() {
         </section>
         {/* Добавить футер, социальные няшки */}
       </div>
-    </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div``;

@@ -1,0 +1,35 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier/react",
+        "prettier/flowtype",
+        "prettier/react",
+        "prettier"
+      ],
+      "parser": "babel-eslint",
+      "plugins": [
+        "jest",
+        "flowtype",
+        "react",
+        "jsx-a11y", 
+        "import",
+        "prettier"
+      ],
+      "env": {
+        "jasmine": true,
+        "node": true,
+        "browser": true,
+        "es6": true
+      },
+      "rules": {
+        "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
+        "prettier/prettier": "error"
+      },
+      "settings": {
+        "import/resolver": {
+          "node": {
+            "paths": ["src"]
+          }
+        }
+      }
+}
